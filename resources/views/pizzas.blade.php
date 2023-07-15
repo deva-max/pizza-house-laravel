@@ -32,30 +32,33 @@
             @endif
 
             
+            @extends('layouts.layout')
 
-                <div class="content">
-                    <div class="title m-b-md">
-                        Pizzas List
-                    </div>
-                    {{-- @for($i = 0; $i < count($pizzas); $i++)
-                        <P>{{ $pizzas[$i]['type'] }}</p>
-                    @endfor --}}
-                    @foreach ($pizzas as $pizza)
-                            <div>
-                                {{ $loop->index }} {{ $pizza['type'] }} - {{ $pizza['base'] }}
-                                @if($loop->first)
-                                    <span>- first in the loop</span>
-                                @endif
+                @section('content')
+                    
+                        <div class="content">
+                            <div class="title m-b-md">
+                                Pizzas List
                             </div>
-                    @endforeach
-                </div>
-
+                            {{-- @for($i = 0; $i < count($pizzas); $i++)
+                                <P>{{ $pizzas[$i]['type'] }}</p>
+                            @endfor --}}
+                            @foreach ($pizzas as $pizza)
+                                    <div>
+                                        {{ $loop->index }} {{ $pizza['type'] }} - {{ $pizza['base'] }}
+                                        @if($loop->first)
+                                            <span>- first in the loop</span>
+                                        @endif
+                                    </div>
+                            @endforeach
+                        </div>
+                    
+                @endsection
                 
 
                     
                 </div>
             </div>
         </div>
-    </body>
-</html>
+    
 
