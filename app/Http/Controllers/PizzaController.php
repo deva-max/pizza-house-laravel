@@ -12,8 +12,7 @@ class PizzaController extends Controller
             ['type' => 'huwaiian', 'base' => 'cheesy srist'],
             ['type' => 'valcono', 'base' => 'garlic crust'],
             ['type' => 'veg supreme', 'base' => 'thin & crispy']
-        ]
-        ;
+        ];
         
         return view('pizzas', [
             'pizzas' => $pizzas
