@@ -38,21 +38,13 @@
                     
                         <div class="content">
                             <div class="title m-b-md">
-                                Pizzas List
+                                Pizzas List - {{$id}}
                             </div>
-                            {{-- <p> {{ $name }} </p>
-                            <p> {{ $age }}</p> --}}
+                           
                             {{-- @for($i = 0; $i < count($pizzas); $i++)
                                 <P>{{ $pizzas[$i]['type'] }}</p>
                             @endfor --}}
-                            @foreach ($pizzas as $pizza)
-                                    <div>
-                                        {{ $loop->index }} {{ $pizza['type'] }} - {{ $pizza['base'] }}
-                                        @if($loop->first)
-                                            <span>- first in the loop</span>
-                                        @endif
-                                    </div>
-                            @endforeach
+                            
                         </div>
                     
                 @endsection
