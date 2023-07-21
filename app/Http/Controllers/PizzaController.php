@@ -25,7 +25,7 @@ class PizzaController extends Controller
         $pizza = ModelsPizza::findOrFail($id);
         return view('pizzas.show', ['pizza' => $pizza]);        
     }
-    public function store(){
+    public function store(){ 
 
         $pizza = new ModelsPizza;
 
