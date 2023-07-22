@@ -1,6 +1,6 @@
 
             
-            @extends('layouts.layout')
+            @extends('layouts.app')
 
                 @section('content')
                     <div class="wrapper pizza-index">
