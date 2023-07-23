@@ -6,9 +6,9 @@
                     <div class="wrapper pizza-index">
                         <h1>Pizza Orders</h1>
                         @foreach ($pizzas as $pizza)
-                            <div class="pizza-item">
+                            <div class="pizza-item" alt="pizza icon">
                                 <img src="/img/pizza.png" alt="pizza icon">
-                                {{ $pizza->name }}
+                                <h4><a href="{{ route('pizzas.show', $pizza->id) }}">{{ $pizza->name }}</a></h4>
                             </div>
                         @endforeach
                     </div>

@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 
 class PizzaController extends Controller
 {
+    // public function __construct(){
+    //     $this->middleware('auth');
+    // }
     public function index(){
         // $pizzas = ModelsPizza::all();
         // $pizzas = ModelsPizza::orderBy('name', 'desc')->get();
